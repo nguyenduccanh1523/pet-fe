@@ -7,6 +7,7 @@ import Flag from "react-world-flags";
 import ChevronDown from "../Search/ChevronDown";
 import DarkMode from "../Search/DarkMode";
 import LightMode from "../Search/LightMode";
+import { FaArrowUp } from "react-icons/fa";
 
 const Title = () => {
   const [showScroll, setShowScroll] = useState(false);
@@ -115,7 +116,7 @@ const Title = () => {
       {showScroll && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-6 right-6 p-3 bg-blue-600 text-white rounded-full shadow-lg hover:bg-blue-700 transition-all z-50"
+          className="fixed bottom-6 right-6 p-3 bg-orange-600 text-white rounded-full shadow-lg hover:bg-orange-700 transition-all z-50"
           aria-label="Scroll to top"
         >
           <FaArrowUp />
