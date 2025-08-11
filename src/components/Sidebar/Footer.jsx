@@ -142,7 +142,7 @@ const Footer = () => {
           <form className="flex items-center bg-gray-100 dark:bg-gray-800 rounded-full px-2 py-1 border border-gray-300 dark:border-gray-700">
             <input
               type="email"
-              placeholder="Enter your email here"
+              placeholder={t("Emailhere")}
               className="flex-1 bg-transparent outline-none px-3 py-2 text-gray-700 dark:text-gray-200 placeholder-gray-400 dark:placeholder-gray-500"
             />
             <button
