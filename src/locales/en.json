@@ -55,5 +55,15 @@
   "Daily Offer": "Daily Offer",
   "DesDailyOffer": "Discover special discounts and deals updated every single day.",
   "Quality Guarantee": "Quality Guarantee",
-  "DesQualityGuarantee": "We stand behind our products with a promise of top-notch quality."
+  "DesQualityGuarantee": "We stand behind our products with a promise of top-notch quality.",
+  "Loading": "Loading...",
+  "category": "Category",
+  "AllProducts": "All Products",
+  "UnknownCategory": "Unknown Category",
+  "SearchProduct": "Search Product...",
+  "PriceUp": "Price Up",
+  "PriceDown": "Price Down",
+  "Newest": "Newest",
+  "LoadingError": "Loading Error",
+  "NoProductsFound": "No products found for this category."
 }

@@ -29,7 +29,7 @@ const CardProduct = ({
         </span>
       )}
       {/* Image */}
-      <div className="h-40 flex items-center justify-center bg-gray-50">
+      <div className="h-40 flex items-center justify-center bg-gray-100 dark:bg-gray-700">
         <img src={image} alt={name} className="object-contain h-36" />
       </div>
       {/* Info */}
@@ -47,7 +47,7 @@ const CardProduct = ({
         </div>
         <div className="font-bold text-lg text-orange-600 mt-1">
           {currency}
-          {price.toLocaleString()}
+          {typeof price === "number" ? price.toLocaleString() : price || 0}
         </div>
       </div>
       {/* Actions */}

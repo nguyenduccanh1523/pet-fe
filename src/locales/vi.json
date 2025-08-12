@@ -55,5 +55,15 @@
   "Daily Offer": "Ưu đãi hàng ngày",
   "DesDailyOffer": "Khám phá các chương trình giảm giá và ưu đãi đặc biệt được cập nhật hàng ngày.",
   "Quality Guarantee": "Đảm bảo chất lượng",
-  "DesQualityGuarantee": "Chúng tôi cam kết chất lượng sản phẩm — đảm bảo hài lòng."
+  "DesQualityGuarantee": "Chúng tôi cam kết chất lượng sản phẩm — đảm bảo hài lòng.",
+  "Loading": "Đang tải...",
+  "category": "Danh mục",
+  "AllProducts": "Tất cả sản phẩm",
+  "UnknownCategory": "Không xác định danh mục",
+  "SearchProduct": "Tìm kiếm sản phẩm...",
+  "PriceUp": "Giá tăng dần",
+  "PriceDown": "Giá giảm dần",
+  "Newest": "Mới nhất",
+  "LoadingError": "Lỗi tải sản phẩm.",
+  "NoProductsFound": "Không tìm thấy sản phẩm phù hợp."
 }
