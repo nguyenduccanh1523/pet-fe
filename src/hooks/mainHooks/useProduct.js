@@ -1,6 +1,8 @@
 import { useMemo, useCallback } from "react";
 import { useQuery } from "@tanstack/react-query";
-import { getAllProducts } from "../../services/mainService/productService";
+import {
+  getAllProducts,
+} from "../../services/mainService/productService";
 import { useDebounce } from "use-debounce";
 
 /**
@@ -87,3 +89,4 @@ const useProduct = ({
 };
 
 export default useProduct;
+

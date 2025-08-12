@@ -1,8 +1,11 @@
+
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { FaStar, FaRegHeart } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const CardProduct = ({
+  product,
   image,
   name,
   price,
@@ -14,6 +17,18 @@ const CardProduct = ({
   currency = "$",
 }) => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
+
+  const handleProductClick = (product) => {
+    const productId = product._id || product.id;
+
+    const url = productId
+      ? `/product/${productId}`
+      : `/product/${productId}`;
+
+    navigate(url);
+  };
+
   return (
     <div className="relative bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden flex flex-col transition-transform hover:-translate-y-1 hover:shadow-2xl duration-200 min-w-[220px] max-w-xs mx-auto">
       {/* Badge */}
@@ -33,7 +48,10 @@ const CardProduct = ({
         <img src={image} alt={name} className="object-contain h-36" />
       </div>
       {/* Info */}
-      <div className="flex-1 flex flex-col px-4 py-3 gap-1">
+      <div
+        className="flex-1 flex flex-col px-4 py-3 gap-1 cursor-pointer"
+        onClick={() => handleProductClick(product)}
+      >
         <h3 className="font-semibold text-base text-gray-800 dark:text-white line-clamp-2 min-h-[48px]">
           {name}
         </h3>

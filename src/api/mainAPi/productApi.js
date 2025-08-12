@@ -30,3 +30,18 @@ export const fetchProducts = async (
     throw error;
   }
 };
+
+export const getProductApi = async (id) => {
+  const params = {
+    populate: 'true'
+  }
+  try {
+    const response = await axiosInstance.get(`/product/${id}`, { params });
+    console.log('idApi', id)
+    console.log('dataApi', response.data);
+    return response.data;
+  } catch (error) {
+    console.error("Error fetching product:", error);
+    throw error;
+  }
+};

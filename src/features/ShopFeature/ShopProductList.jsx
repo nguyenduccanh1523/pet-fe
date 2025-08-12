@@ -17,9 +17,9 @@ const ShopProductList = () => {
   const sortOptions = [
     { value: "az", label: "A-Z" },
     { value: "za", label: "Z-A" },
-    { value: "priceUp", label: t('PriceUp') },
-    { value: "priceDown", label: t('PriceDown') },
-    { value: "newest", label: t('Newest') },
+    { value: "priceUp", label: t("PriceUp") },
+    { value: "priceDown", label: t("PriceDown") },
+    { value: "newest", label: t("Newest") },
   ];
   // Xác định category id từ slug nếu có
   const findCategoryBySlug = (slug) => {
@@ -49,7 +49,6 @@ const ShopProductList = () => {
   };
 
   const found = categorySlug ? findCategoryBySlug(categorySlug) : undefined;
-  console.log("Selected Category:", found);
 
   // Gọi hook lấy sản phẩm thực tế
   const { products, loading, error } = useProduct({
@@ -68,8 +67,6 @@ const ShopProductList = () => {
         ? "price:desc"
         : "created_at:desc",
   });
-
-  console.log(products);
 
   // Lấy label breadcrumb
   const getCategoryLabel = () => {
@@ -151,7 +148,9 @@ const ShopProductList = () => {
       {loading ? (
         <LoadingSpinner />
       ) : error ? (
-        <div className="text-center text-red-500 py-10">{t("LoadingError")}</div>
+        <div className="text-center text-red-500 py-10">
+          {t("LoadingError")}
+        </div>
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {products.length === 0 ? (
@@ -162,6 +161,8 @@ const ShopProductList = () => {
             products.map((product, idx) => (
               <CardProduct
                 key={product.id || product._id || idx}
+                category={product.category_id?.name}
+                product={product}
                 image={product.images[0]?.media_id?.file_path}
                 name={product.name}
                 price={product.base_price}
