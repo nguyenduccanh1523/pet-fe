@@ -1,4 +1,5 @@
 import HomePage from "../pages/main/HomePage"
+import ProductPage from "../pages/main/ProductPage"
 import ShopPage from "../pages/main/ShopPage"
 
 const publicRoutes = [
@@ -13,6 +14,14 @@ const publicRoutes = [
   {
     path: '/shop/:categorySlug',
     element: <ShopPage />,
+  },
+  {
+    path: '/product',
+    element: <ProductPage />,
+  },
+  {
+    path: '/product/:productId',
+    element: <ProductPage />,
   }
   // {
   //   path: '/about',

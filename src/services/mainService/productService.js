@@ -1,4 +1,5 @@
-import { fetchProducts } from "../../api/mainAPi/productApi";
+
+import { fetchProducts} from "../../api/mainAPi/productApi";
 
 export const getAllProducts = async (page, pageSize, keyword, category_id, brand_id, minPrice, maxPrice, sort) => {
   try {
@@ -9,3 +10,4 @@ export const getAllProducts = async (page, pageSize, keyword, category_id, brand
     throw error;
   }
 };
+
