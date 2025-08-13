@@ -183,28 +183,28 @@ const Product = ({ onProductData }) => {
           </Title>
           <Space size={[16, 8]} wrap style={{ marginBottom: 8 }}>
             <Text>
-              Thương hiệu:{" "}
+              {t("Brand")}:{" "}
               <Text strong type="secondary" style={{ color: "#1677ff" }}>
                 {product.brand_id?.name}
               </Text>
             </Text>
             <Text>
-              Danh mục:{" "}
+              {t('category')}:{" "}
               <Text strong style={{ color: "#fa8c16" }}>
                 {product.category_id?.name}
               </Text>
             </Text>
             <Text>
-              Tình trạng:{" "}
+              {t("Status")}:{" "}
               {selectedVariant?.stock_quantity > 0 ? (
-                <span style={{ color: "#2ecc40" }}>Còn hàng</span>
+                <span style={{ color: "#2ecc40" }}>{t("InStock")}</span>
               ) : (
-                <span style={{ color: "#ff4d2d" }}>Hết hàng</span>
+                <span style={{ color: "#ff4d2d" }}>{t("OutOfStock")}</span>
               )}
             </Text>
           </Space>
           <div className="mb-2" style={{ fontSize: 15 }}>
-            <span className="fw-bold">Mã SKU:</span>
+            <span className="fw-bold">{t("Code")} SKU:</span>
             <span
               style={{
                 color: "#e2a355",
@@ -234,7 +234,7 @@ const Product = ({ onProductData }) => {
           {/* Type selection */}
           {variants && variants.length > 0 && (
             <div className="mb-2 text-[15px]">
-              <span className="font-bold">Loại:</span>
+              <span className="font-bold">{t('Type')}:</span>
               <div className="flex flex-wrap gap-2 mt-2">
                 {variants.map((variant) => {
                   const isSelected = selectedType === variant._id;
@@ -262,7 +262,7 @@ const Product = ({ onProductData }) => {
           {/* Tag display */}
           {tags && tags.length > 0 && (
             <div className="mb-2">
-              <span className="font-bold">Tags:</span>
+              <span className="font-bold">{t("Tag")}:</span>
               {tags.map((tag) => (
                 <span
                   key={tag._id}
@@ -305,12 +305,12 @@ const Product = ({ onProductData }) => {
               onClick={handleAddToCart}
               className="flex items-center justify-center gap-2 rounded-lg min-w-[120px] font-semibold bg-orange-500 text-white px-4 py-2 hover:bg-orange-600 transition"
             >
-              <ShoppingCartOutlined /> Mua hàng
+              <ShoppingCartOutlined /> {t("addToCart")}
             </button>
 
             {/* Nút chat */}
             <button className="flex items-center justify-center gap-2 rounded-lg min-w-[120px] font-semibold text-orange-500 border border-orange-500 bg-yellow-50 px-4 py-2 hover:bg-yellow-100 transition">
-              <MessageOutlined /> Chat với shop
+              <MessageOutlined /> {t("Message")}
             </button>
           </div>
 
@@ -320,10 +320,10 @@ const Product = ({ onProductData }) => {
               onClick={handleFavorite}
               className="flex items-center gap-2 rounded-lg border border-gray-300 px-4 py-2 hover:bg-gray-100 transition"
             >
-              <HeartOutlined /> Thêm vào yêu thích
+              <HeartOutlined /> {t("AddWishlist")}
             </button>
             <span className="text-orange-500 font-bold flex items-center gap-1">
-              <PhoneOutlined /> Gọi ngay <b>0949111520</b> để có giá tốt nhất!
+              <PhoneOutlined /> <b>{t("ProductContact")}</b>
             </span>
           </div>
         </div>
