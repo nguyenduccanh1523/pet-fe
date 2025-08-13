@@ -59,31 +59,31 @@ const ProductPage = () => {
         >
           <Space direction="vertical" size={16} style={{ width: "100%" }}>
             <Text strong style={{ color: "#fa8c16" }}>
-              🚚 Giao hàng nhanh chóng
+              🚚 {t('ProductShipping')}
             </Text>
             <Text type="secondary" style={{ fontSize: 13 }}>
-              Nội thành Hoá tốc 30 phút
+              {t('ProductShippingDes')}
             </Text>
             <Text strong style={{ color: "#fa8c16" }}>
-              ✅ Sản phẩm chính hãng
+              ✅ {t('ProductOrigin')}
             </Text>
             <Text type="secondary" style={{ fontSize: 13 }}>
-              Sản phẩm nhập khẩu 100%
+              {t('ProductOriginDes')}
             </Text>
             <Text strong style={{ color: "#fa8c16" }}>
-              🔄 Đổi trả cực kì dễ dàng
+              🔄 {t('ProductReturn')}
             </Text>
             <Text type="secondary" style={{ fontSize: 13 }}>
-              Đổi trả trong 5 ngày đầu tiên
+              {t('ProductReturnDes')}
             </Text>
             <Text strong style={{ color: "#fa8c16" }}>
-              💰 Mua hàng tiết kiệm
+              💰 {t('ProductSave')}
             </Text>
             <Text type="secondary" style={{ fontSize: 13 }}>
-              Giá tốt nhất thị trường
+              {t('ProductSaveDes')}
             </Text>
             <Text strong style={{ color: "#fa8c16" }}>
-              📞 Hotline mua hàng:
+              📞 {t('ProductHotline')}:
             </Text>
             <Text type="secondary" style={{ fontSize: 13 }}>
               0949111520
