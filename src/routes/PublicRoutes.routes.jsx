@@ -7,6 +7,7 @@ const publicRoutes = [
     path: '/',
     element: <HomePage />,
   },
+  
   {
     path: '/shop',
     element: <ShopPage />,
