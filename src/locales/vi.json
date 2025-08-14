@@ -115,5 +115,6 @@
   "profile": "Thông tin cá nhân",
   "orders": "Đơn hàng",
   "shopManagement": "Quản lý cửa hàng",
-  "logout": "Đăng xuất"
+  "logout": "Đăng xuất",
+  "registering": "Đang đăng ký..."
 }
