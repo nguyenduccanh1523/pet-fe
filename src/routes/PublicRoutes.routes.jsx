@@ -1,3 +1,4 @@
+import BlogPage from "../pages/main/BlogPage"
 import HomePage from "../pages/main/HomePage"
 import ProductPage from "../pages/main/ProductPage"
 import ShopPage from "../pages/main/ShopPage"
@@ -23,6 +24,10 @@ const publicRoutes = [
   {
     path: '/product/:productId',
     element: <ProductPage />,
+  },
+  {
+    path: '/blog',
+    element: <BlogPage />,
   }
   // {
   //   path: '/about',
