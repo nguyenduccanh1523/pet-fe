@@ -11,8 +11,9 @@ export const loginUser = async (payload) => {
   }
 };
 
-export const registerUser = async (email, password, confirmPassword) => {
+export const registerUser = async (payload) => {
   try {
+    const { email, password, confirmPassword } = payload;
     if (password !== confirmPassword) {
       throw new Error("Passwords do not match");
     }

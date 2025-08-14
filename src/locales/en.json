@@ -114,5 +114,6 @@
   "profile": "Profile",
   "orders": "Orders",
   "shopManagement": "Shop Management",
-  "logout": "Logout"
+  "logout": "Logout",
+  "registering": "Registering..."
 }

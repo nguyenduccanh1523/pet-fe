@@ -1,19 +1,43 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import logo from "../../../assets/logo.png";
 import { FaFacebookF, FaGoogle } from "react-icons/fa";
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 import { useTranslation } from "react-i18next";
+import { toast } from "react-toastify";
+import { registerUser } from "../../../api/mainAPi/authApi";
 
 const Register = () => {
   const { t } = useTranslation();
-
-  const [fullName, setFullName] = React.useState("");
+  const negative = useNavigate()
   const [email, setEmail] = React.useState("");
   const [password, setPassword] = React.useState("");
   const [confirmPassword, setConfirmPassword] = React.useState("");
   const [showPassword, setShowPassword] = React.useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = React.useState(false);
+  const [loading, setLoading] = React.useState(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    if (!email || !password || !confirmPassword) {
+      return;
+    }
+    if (password !== confirmPassword) {
+      toast.error("Passwords do not match");
+      return;
+    }
+    try {
+      setLoading(true);
+      await registerUser({ email, password, confirmPassword });
+      toast.success("Registration successful");
+      negative("/login");
+    } catch (err) {
+      const msg = err.response?.data?.message || err.message || "Registration failed";
+      toast.error(msg);
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <div className="min-h-screen flex flex-col justify-between bg-orange-50">
@@ -31,19 +55,7 @@ const Register = () => {
           <h2 className="text-2xl font-bold text-center text-orange-500 mb-6">
             {t("registerDetail")}
           </h2>
-          <form className="space-y-5">
-            <div>
-              <label className="block text-gray-700 mb-1 font-medium">
-                {t("FullName")}
-              </label>
-              <input
-                type="text"
-                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400"
-                placeholder={t("FullName")}
-                onChange={(e) => setFullName(e.target.value)}
-                required
-              />
-            </div>
+          <form className="space-y-5" onSubmit={handleSubmit}>
             <div>
               <label className="block text-gray-700 mb-1 font-medium">
                 Email
@@ -118,7 +130,7 @@ const Register = () => {
               type="submit"
               className="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 rounded-lg transition"
             >
-              {t("register")}
+              {loading ? t("registering") : t("register")}
             </button>
           </form>
           <div className="flex justify-center items-center mt-4 text-sm">
