@@ -115,5 +115,13 @@
   "orders": "Orders",
   "shopManagement": "Shop Management",
   "logout": "Logout",
-  "registering": "Registering..."
+  "registering": "Registering...",
+
+  "PetBlogTeam": "Pet Blog Team",
+  "PetBlogDescription": "Sharing knowledge & experience in pet care",
+  "searchPlaceholder": "Search articles...",
+  "previous": "Previous",
+  "next": "Next",
+  "blogLoadError": "Error loading blog posts!",
+  "backToBlog": "Back to Blog"
 }

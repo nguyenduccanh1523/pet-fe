@@ -37,8 +37,6 @@ export const getProductApi = async (id) => {
   }
   try {
     const response = await axiosInstance.get(`/product/${id}`, { params });
-    console.log('idApi', id)
-    console.log('dataApi', response.data);
     return response.data;
   } catch (error) {
     console.error("Error fetching product:", error);

@@ -13,6 +13,7 @@ const BlogPage = () => {
   const [page, setPage] = useState(1);
   const pageSize = 6;
   const { blogCategories, loading, error } = useBlogCategory();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const categories = blogCategories?.data || [];
 
   //tim cat theo slug
@@ -113,8 +114,10 @@ const BlogPage = () => {
         {/* Blog List */}
         <main className="md:w-2/3 w-full">
           {loading && <LoadingSpinner />}
-          {error && <div>Lỗi khi tải blog!</div>}
-          <Blog />
+          {error && <div>{t("blogLoadError")}</div>}
+          {!loading && pagedBlogs.map(post => (
+            <Blog key={post._id} post={post} />
+          ))}
 
           <nav aria-label="Page navigation" className="mt-4">
             <ul className="flex justify-center items-center space-x-2">
@@ -127,7 +130,7 @@ const BlogPage = () => {
                   onClick={() => setPage(page - 1)}
                   disabled={page === 1}
                 >
-                  Trước
+                  {t("previous")}
                 </button>
               </li>
 
@@ -156,7 +159,7 @@ const BlogPage = () => {
                   onClick={() => setPage(page + 1)}
                   disabled={page === pageCount}
                 >
-                  Sau
+                  {t("next")}
                 </button>
               </li>
             </ul>

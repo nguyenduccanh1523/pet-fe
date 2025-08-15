@@ -17,3 +17,13 @@ export const fetchBlogsCategory = async (page = 1, pageSize = 20) => {
     throw error;
   }
 }
+
+export const fetchGetBlogApi = async ({blogId}) => {
+  try {
+    const response = await axiosInstance.get(`/blogs/${blogId}`);
+    return response.data;
+  } catch (error) {
+    console.error("Error fetching blog:", error);
+    throw error;
+  }
+}
