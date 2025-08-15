@@ -124,5 +124,18 @@
   "previous": "Trước",
   "next": "Sau",
   "blogLoadError": "Lỗi khi tải blog!",
-  "backToBlog": "Quay lại Blog"
+  "backToBlog": "Quay lại Blog",
+
+  "aboutUsTitle": "Pet Shop - Thế giới cho thú cưng",
+  "aboutUsTitle1": "Nơi bạn tìm thấy mọi điều tốt nhất cho thú cưng của mình!",
+  "aboutUsTitle2": "Chăm sóc tận tâm - Sản phẩm chất lượng - Dịch vụ chuyên nghiệp",
+  "aboutUsDes": "Pet Shop là website chuyên cung cấp các sản phẩm, dịch vụ và kiến thức chăm sóc thú cưng hàng đầu Việt Nam. Chúng tôi cam kết mang đến cho khách hàng những trải nghiệm mua sắm tuyệt vời, sản phẩm đa dạng, chất lượng cao cùng đội ngũ tư vấn tận tâm, chuyên nghiệp.",
+  "aboutUsMission": "Sứ mệnh",
+  "aboutUsMissionDes": "Đồng hành cùng bạn trong hành trình chăm sóc và yêu thương thú cưng.",
+  "aboutUsCoreValues": "Giá trị cốt lõi",
+  "aboutUsCoreValuesDes": "Tận tâm - Chất lượng - Đổi mới - Tin cậy.",
+  "aboutUsVision": "Tầm nhìn",
+  "aboutUsVisionDes": "Trở thành hệ sinh thái chăm sóc thú cưng số 1 tại Việt Nam.",
+  "aboutUsTeam": "Đội ngũ của chúng tôi",
+  "aboutUsThankYou": "Cảm ơn bạn đã tin tưởng và đồng hành cùng Pet Shop!"
 }

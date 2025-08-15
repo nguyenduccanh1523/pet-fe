@@ -123,5 +123,18 @@
   "previous": "Previous",
   "next": "Next",
   "blogLoadError": "Error loading blog posts!",
-  "backToBlog": "Back to Blog"
+  "backToBlog": "Back to Blog",
+
+  "aboutUsTitle": "Pet Shop - The World for Pets",
+  "aboutUsTitle1": "Where you find the best for your pets!",
+  "aboutUsTitle2": "Dedicated care - Quality products - Professional services",
+  "aboutUsDes": "Pet Shop is a website specializing in providing top pet care products, services, and knowledge in Vietnam. We are committed to bringing customers wonderful shopping experiences, diverse products, high quality, and a dedicated, professional consulting team.",
+  "aboutUsMission": "Mission",
+  "aboutUsMissionDes": "Accompanying you on the journey of caring for and loving your pets.",
+  "aboutUsCoreValues": "Core Values",
+  "aboutUsCoreValuesDes": "Dedication - Quality - Innovation - Reliability.",
+  "aboutUsVision": "Vision",
+  "aboutUsVisionDes": "To become the number 1 pet care ecosystem in Vietnam.",
+  "aboutUsTeam": "Our Team",
+  "aboutUsThankYou": "Thank you for trusting and accompanying Pet Shop!"
 }
