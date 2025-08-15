@@ -1,4 +1,5 @@
 import BlogDetail from "../features/BlogFeature/BlogDetail"
+import AboutUsPage from "../pages/main/AboutUsPage"
 import BlogPage from "../pages/main/BlogPage"
 import HomePage from "../pages/main/HomePage"
 import ProductPage from "../pages/main/ProductPage"
@@ -37,11 +38,11 @@ const publicRoutes = [
   {
     path: '/blog/:id',
     element: <BlogDetail />,
-  }
-  // {
-  //   path: '/about',
-  //   element: <AboutPage />,
-  // },
+  },
+  {
+    path: '/about-us',
+    element: <AboutUsPage />,
+  },
   // {
   //   path: '/contact',
   //   element: <ContactPage />,
