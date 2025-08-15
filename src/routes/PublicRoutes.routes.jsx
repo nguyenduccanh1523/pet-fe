@@ -1,3 +1,4 @@
+import BlogDetail from "../features/BlogFeature/BlogDetail"
 import BlogPage from "../pages/main/BlogPage"
 import HomePage from "../pages/main/HomePage"
 import ProductPage from "../pages/main/ProductPage"
@@ -28,6 +29,14 @@ const publicRoutes = [
   {
     path: '/blog',
     element: <BlogPage />,
+  },
+  {
+    path: '/blog/category/:categorySlug',
+    element: <BlogPage />,
+  },
+  {
+    path: '/blog/:id',
+    element: <BlogDetail />,
   }
   // {
   //   path: '/about',

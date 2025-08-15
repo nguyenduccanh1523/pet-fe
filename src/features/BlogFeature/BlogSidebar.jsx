@@ -1,6 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
+import logo from "../../assets/petblogteam.png";
 
 const BlogSidebar = ({
   // blogPosts,
@@ -14,20 +15,20 @@ const BlogSidebar = ({
       {/* Author */}
       <div className="flex flex-col items-center mb-8">
         <img
-          src="/vite.svg"
+          src={logo}
           alt="avatar"
           className="w-20 h-20 rounded-full border-4 border-blue-200 mb-3"
         />
-        <h2 className="font-semibold text-lg text-gray-800">Pet Blog Team</h2>
+        <h2 className="font-semibold text-lg text-gray-800">{t("PetBlogTeam")}</h2>
         <p className="text-gray-500 text-sm">
-          Chia sẻ kiến thức & kinh nghiệm nuôi thú cưng
+          {t("PetBlogDescription")}
         </p>
       </div>
       {/* Search */}
       <div className="mb-8">
         <input
           type="text"
-          placeholder="Tìm kiếm bài viết..."
+          placeholder={t("searchPlaceholder")}
           className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-300"
         />
       </div>

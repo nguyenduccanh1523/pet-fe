@@ -116,5 +116,13 @@
   "orders": "Đơn hàng",
   "shopManagement": "Quản lý cửa hàng",
   "logout": "Đăng xuất",
-  "registering": "Đang đăng ký..."
+  "registering": "Đang đăng ký...",
+
+  "PetBlogTeam": "Đội ngũ PetBlog",
+  "PetBlogDescription": "Chia sẻ kiến thức & kinh nghiệm nuôi thú cưng",
+  "searchPlaceholder": "Tìm kiếm bài viết...",
+  "previous": "Trước",
+  "next": "Sau",
+  "blogLoadError": "Lỗi khi tải blog!",
+  "backToBlog": "Quay lại Blog"
 }
