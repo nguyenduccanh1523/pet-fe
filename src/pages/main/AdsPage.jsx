@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const sampleAds = [
   {
@@ -34,6 +35,7 @@ const sampleAds = [
 ];
 
 const AdsPage = () => {
+  const { t } = useTranslation();
   const ads = sampleAds;
 
   return (
@@ -76,7 +78,7 @@ const AdsPage = () => {
                     rel="noopener noreferrer"
                     className="ml-2 bg-blue-500 text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-blue-600 transition"
                   >
-                    Xem chi tiết
+                    {t("aboutUsSeeMore")}
                   </a>
                 )}
               </div>
