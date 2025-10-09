@@ -137,5 +137,13 @@
   "aboutUsVisionDes": "To become the number 1 pet care ecosystem in Vietnam.",
   "aboutUsTeam": "Our Team",
   "aboutUsThankYou": "Thank you for trusting and accompanying Pet Shop!",
-  "aboutUsSeeMore": "See more"
+  "aboutUsSeeMore": "See more",
+
+  "AdsPageTitle": "Featured Deals & New Products",
+  "AdsPageDes": "Discover current promotions and new products for your pets.",
+  "AdsPageFilter": "Filter",
+  "AdsPageReload": "Reload",
+  "AdsPageShowActiveOnly": "Show Active Only",
+  "AdsPageShowingActive": "Showing: Active",
+  "AdsPageNoAds": "No ads available."
 }

@@ -2,6 +2,7 @@ import BlogDetail from "../features/BlogFeature/BlogDetail"
 import AboutUsPage from "../pages/main/AboutUsPage"
 import AdsPage from "../pages/main/AdsPage"
 import BlogPage from "../pages/main/BlogPage"
+import BrandPage from "../pages/main/BrandPage"
 import HomePage from "../pages/main/HomePage"
 import ProductPage from "../pages/main/ProductPage"
 import ShopPage from "../pages/main/ShopPage"
@@ -47,6 +48,10 @@ const publicRoutes = [
   {
     path: '/ads',
     element: <AdsPage />,
+  },
+  {
+    path: '/brands',
+    element: <BrandPage />,
   }
   // {
   //   path: '/contact',
